@@ -2,6 +2,13 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\PeliculasController;
+use App\Http\Controllers\DatosController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\CompraController;
+use App\Http\Controllers\CineController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +21,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+Route::get('/peliculas', [PeliculasController::class, 'pelicula'])->name('peliculas');
+Route::get('/datos', 'DatosController@index');
+Route::resource('clientes', ClienteController::class);
+Route::resource('compras', CompraController::class);
+Route::resource('cines', CineController::class);
+
+
+
+
+
+
+
