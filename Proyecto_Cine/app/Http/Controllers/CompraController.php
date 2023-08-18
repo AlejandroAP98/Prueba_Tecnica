@@ -22,7 +22,7 @@ class CompraController extends Controller
         $compra->monto = $request->monto;
         $compra->nombre = $request->nombre;
         $compra->ubicacion = $request->ubicacion;
-        $compra->pelicula_id = $request->pelicula_id;
+        $compra->pelicula = $request->pelicula;
 
         $compra->save();
 
@@ -41,7 +41,7 @@ class CompraController extends Controller
         $compra->monto = $request->monto;
         $compra->nombre = $request->nombre;
         $compra->ubicacion = $request->ubicacion;
-        $compra->pelicula_id = $request->pelicula_id;
+        $compra->pelicula = $request->pelicula;
 
         $compra->save();
         

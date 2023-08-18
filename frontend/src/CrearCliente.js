@@ -35,7 +35,7 @@ function CreateClientForm() {
   };
 
   return (
-    <div className="row white">
+    <div className="row white center ">
         <h2 className='center '>Crear Cliente</h2>
         <form onSubmit={handleSubmit} id="tablas">
             <div className="row">

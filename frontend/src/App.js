@@ -1,6 +1,6 @@
 
 import Peliculas from './Peliculas';
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import Clientes from './Clientes';
 import Cines from './Cines';
 import Compras from './Compras';
@@ -10,22 +10,6 @@ import CreateCompraForm from './CrearCompra';
 
 
 function App() {
-  const [horaActual, setHoraActual] = useState('');
-  const [fechaActual, setFechaActual] = useState('');
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const now = new Date();
-      const hora = now.toLocaleTimeString();
-      const fecha = now.toLocaleDateString();
-
-      setHoraActual(hora);
-      setFechaActual(fecha);
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-    }, []);
-    
     return (
         
       <div className='row'>
