@@ -58,7 +58,7 @@ function Cines() {
   return (
     <div className="row">
      <div className='col s12 white'>
-      <h2 className='center'>Cines</h2>
+      <h2 className='center'>Teatros</h2>
       <table id="tablas">
         <thead>
           <tr>
