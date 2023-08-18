@@ -31,8 +31,8 @@ function CreateCineForm() {
     }
 
     return (
-        <div className="row white">
-            <h2 className='center '>Crear Cine</h2>
+        <div className="row white center">
+            <h2 className='center '>Crear Teatro</h2>
             <form onSubmit={handleSubmit} id="tablas">
                 <div className="row">
                     <div className="input-field col s6 ">

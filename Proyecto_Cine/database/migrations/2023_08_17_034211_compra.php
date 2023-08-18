@@ -20,7 +20,7 @@ class  Compra extends Migration
             $table -> string ( "monto" , 50 );
             $table -> string ( "ubicacion", 50 );
             $table -> string ( "nombre", 50 );
-            $table -> unsignedBigInteger ( "pelicula_id" );
+            $table -> string ( "pelicula", 50 );
             $table -> timestamps ();
         });
     }
