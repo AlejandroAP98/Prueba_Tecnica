@@ -1,0 +1,86 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#imagenes{
+  margin-right: 5px;
+  width: 200px;
+  height: 300px;
+  display: flex;
+ 
+}
+
+#cartelera{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+}
+
+#titulos {
+  font-family: Arial; 
+  COLOR: #000000; 
+  text-shadow: 0px 0px 9px #cecece;
+}
+
+#divTitulo{
+  background-image: radial-gradient(circle at center center, #ffffff, #c5c4c4), repeating-radial-gradient(circle at center center, #fafafa, #fafafa, 32px, transparent 64px, transparent 32px);
+  background-blend-mode: multiply;
+  background-color: #ffffff;
+}
+
+#icono{
+  align-items: center;
+  width: 180px;
+  height: 90px;
+}
+
+#textForm{
+  font-family: Arial; 
+  COLOR: #000000; 
+}
+
+#crud{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+   
+}
+
+#tablas{
+  width: 600px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 300px;
+  display: auto;
+
+}
+
+/* hacer que las tablas puedan scrollear hacia abajo */
+#tablas{
+  overflow-y: scroll;
+  height: 300px;
+  display: block;
+} 
+
+h2{
+  color: #000000;
+  font-family: Arial;
+  text-shadow: 2px 1px 0 #919191;
+  color: #000000;
+  text-transform: uppercase;
+  font-style: bold;
+
+
+}
