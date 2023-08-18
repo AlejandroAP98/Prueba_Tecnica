@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\CompraModel;
 
+use App\Models\CineModel;
+use App\Models\PeliculaModel;
+
 
 class CompraController extends Controller
 {
@@ -15,12 +18,14 @@ class CompraController extends Controller
 
     public function store(Request $request){
         $compra = new CompraModel();
-        $compra->fecha = $request->fecha;
-        $compra->hora = $request->hora;
         $compra->entradas = $request->entradas;
         $compra->monto = $request->monto;
+        $compra->nombre = $request->nombre;
+        $compra->ubicacion = $request->ubicacion;
+        $compra->pelicula_id = $request->pelicula_id;
+
         $compra->save();
-                
+
         return response()->json($compra);
 
     }
@@ -32,12 +37,15 @@ class CompraController extends Controller
 
     public function update(Request $request, $id){
         $compra = CompraModel::find($id);
-        $compra->fecha = $request->fecha;
-        $compra->hora = $request->hora;
         $compra->entradas = $request->entradas;
         $compra->monto = $request->monto;
+        $compra->nombre = $request->nombre;
+        $compra->ubicacion = $request->ubicacion;
+        $compra->pelicula_id = $request->pelicula_id;
+
         $compra->save();
-                
+        
+        
         return response()->json($compra);
 
     }

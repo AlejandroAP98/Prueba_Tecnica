@@ -16,10 +16,11 @@ class  Compra extends Migration
         //
         Schema :: create ( "compra" , function ( Blueprint $table ) {
             $table -> id ();
-            $table -> date ( "fecha");
-            $table -> time ( "hora");
             $table -> string ( "entradas" , 50 );
             $table -> string ( "monto" , 50 );
+            $table -> string ( "ubicacion", 50 );
+            $table -> string ( "nombre", 50 );
+            $table -> unsignedBigInteger ( "pelicula_id" );
             $table -> timestamps ();
         });
     }
